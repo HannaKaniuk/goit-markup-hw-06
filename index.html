@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body class="body">
-    <!-- <header class="menu-list">
+    <header class="menu-list">
       <div class="container container-header">
         <nav class="menu list">
           <a href="./index.html" class="logo-link link"
@@ -63,11 +63,52 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="icons-mob" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="icons-mob-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="list mob-menu-list">
+          <li class="mob-menu-link">
+            <a href="./index.html" class="mob-link-menu mob-link-after link"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-link">
+            <a href="./portfolio.html" class="mob-link-menu link">Portfolio</a>
+          </li>
+          <li class="mob-menu-link">
+            <a href="" class="mob-link-menu link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="mob-address-list list">
+          <ul class="list mob-address-menu">
+            <li>
+              <a href="tel:+110001111111" class="mob-address-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-mail-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="section-title">
+      <section class="section-title">
         <div class="container container-title">
           <h1 class="title">Effective Solutions for Your Business</h1>
 
@@ -75,7 +116,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="section-content">
         <div class="container container-content">
           <h2 class="visually-hidden">Content</h2>
@@ -140,13 +181,29 @@
           <h2 class="title-two">What are we doing</h2>
           <ul class="photo list">
             <li class="photo-item">
-              <img src="./images/img1.jpg" alt="computer" width="360" />
+              <picture>
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                />
+                <img src="./images/img1.jpg" alt="computer" width="360" />
+              </picture>
+            </li>
+
+            <li class="photo-item">
+              <picture>
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                />
+                <img src="./images/img2.jpg" alt="website" width="360" />
+              </picture>
             </li>
             <li class="photo-item">
-              <img src="./images/img2.jpg" alt="website" width="360" />
-            </li>
-            <li class="photo-item">
-              <img src="./images/img3.jpg" alt="telephone" width="360" />
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                />
+                <img src="./images/img3.jpg" alt="telephone" width="360" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -157,19 +214,24 @@
 
           <ul class="team list">
             <li class="photo-background">
-              <img
-                src="./images/img4.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                />
+                <img
+                  src="./images/img4.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="container-people">
                 <h3 class="title-link-people">Mark Guerrero</h3>
                 <p class="text-name">Product Designer</p>
                 <ul class="icon-container-people list">
                   <li class="icon-list">
                     <a
-                      href="https://www.instagram.com"
+                      href="htstps://www.instagram.com"
                       class="icon-social-link"
                     >
                       <svg class="icons-people" width="16" height="16">
@@ -203,12 +265,15 @@
             </li>
 
             <li class="photo-background">
-              <img
-                src="./images/img5.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/img5.jpg 1x, images/img5-2x.jpg 2x" />
+                <img
+                  src="./images/img5.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="container-people">
                 <h3 class="title-link-people">Tom Ford</h3>
                 <p class="text-name">Frontend Developer</p>
@@ -249,12 +314,17 @@
             </li>
 
             <li class="photo-background">
-              <img
-                src="./images/img6.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
+                />
+                <img
+                  src="./images/img6.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="container-people">
                 <h3 class="title-link-people">Camila Garcia</h3>
                 <p class="text-name">Marketing</p>
@@ -295,12 +365,17 @@
             </li>
 
             <li class="photo-background">
-              <img
-                src="./images/img7.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
+                />
+                <img
+                  src="./images/img7.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="container-people">
                 <h3 class="title-link-people">Daniel Wilson</h3>
                 <p class="text-name">UI Designer</p>
@@ -342,7 +417,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section-five">
+      <section class="section-five">
         <div class="container container-customers">
           <h2 class="title-five">Customers</h2>
           <ul class="icon-container-customers list">
@@ -390,10 +465,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="logo-ftr-container">
           <a href="./index.html" class="logo-footer link"
@@ -458,8 +533,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div data-modal class="container-modal is-hidden">
+    </footer>
+    <div data-modal class="container-modal is-hidden">
       <div class="modal">
         <button type="button" data-modal-close class="btn-modal">
           <svg class="modal-icon" width="8" height="8">
@@ -542,7 +617,8 @@
           <button class="button-modal">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
