@@ -12,11 +12,14 @@
     display: flex;
     gap: 40px;
   }
-
+  .menu-open-btn {
+    display: none;
+  }
   .address-menu {
     display: flex;
-    gap: 40px;
-    flex-grow: 1;
+    flex-direction: column;
+    gap: 12px;
+    /* flex-grow: 1; */
   }
   .link-menu {
     font-weight: 500;
@@ -54,11 +57,10 @@
   }
   .address-link {
     list-style: none;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
     color: var(--text);
-
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -177,6 +179,18 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .address-menu {
+      display: flex;
+      flex-direction: inherit;
+      gap: 40px;
+    }
+    .address-link {
+      list-style: none;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+
     .container-title {
       flex-direction: column;
       gap: 48px;

@@ -56,7 +56,6 @@ img {
 /* HEADER */
 
 .menu-list {
-  height: 70px;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -69,6 +68,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu {
@@ -111,10 +112,22 @@ img {
   justify-content: space-between;
 }
 .menu-close-btn {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-bottom: 32px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 24px;
+  height: 24px;
 }
+
 .mob-menu-list {
   margin-bottom: 284px;
 }
