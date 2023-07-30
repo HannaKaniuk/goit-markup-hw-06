@@ -146,6 +146,15 @@
   .form {
     gap: 24px;
   }
+  .portfolio-main-container {
+    width: calc((100% - 48px) / 3);
+  }
+  .photo-list {
+    gap: 72px;
+  }
+  .menu-list-portfolio {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
@@ -236,6 +245,12 @@
 
   .logo-ftr-container {
     margin-right: 120px;
+  }
+  .portfolio-main-container {
+    width: calc((100% - 72px) / 4);
+  }
+  .photo-list {
+    gap: 48px;
   }
 }
 @media (max-width: 1158px) {
