@@ -71,8 +71,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu {
@@ -112,7 +110,6 @@ img {
   padding: 24px 24px 40px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .menu-close-btn {
   display: flex;
@@ -165,15 +162,16 @@ img {
   list-style: none;
   font-size: 36px;
   letter-spacing: 0.02em;
-  color: var(--text);
+  color: var(--primary-brand);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
   line-height: 1.11;
 }
-.mob-address-link:hover,
-:focus {
-  color: var(--primary-brand);
+@media screen and (max-width: 428px) {
+  .mob-address-link {
+    font-size: 24px;
+  }
 }
 .mob-mail-link:hover,
 :focus {
@@ -195,7 +193,8 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-mb-1x.jpg);
-  padding: 112px 54px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -226,7 +225,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 320px;
+  max-width: 320px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -315,7 +314,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
-  align-items: center;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -462,7 +461,6 @@ img {
 .icn-container {
   width: calc((100% - 16px) / 2);
   height: 88px;
-  margin-bottom: 72px;
 }
 .icn-customers {
   justify-content: center;
@@ -499,7 +497,6 @@ img {
   letter-spacing: 0.02em;
   font-size: 16px;
   width: 264px;
-  margin-bottom: 72px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -516,11 +513,11 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 72px;
 }
 .icon-container-footer {
   display: flex;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .media-ftr {
   font-size: 16px;
@@ -536,6 +533,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 72px;
 }
 .icon-ftr {
   display: flex;
@@ -595,7 +593,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  max-width: 408px;
   min-height: 584px;
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -859,9 +857,6 @@ input:focus + label.text-mdl {
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
-  /* column-gap: 24px; */
-  /* row-gap: 48px; */
-  /* align-items: flex-start; */
 }
 .photo-background {
   background-color: var(--white-background);
