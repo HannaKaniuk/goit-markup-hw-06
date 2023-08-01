@@ -160,8 +160,10 @@
   .container-form {
     align-items: start;
   }
+
   .form {
     gap: 24px;
+    flex-wrap: nowrap;
   }
   .portfolio-main-container {
     width: calc((100% - 48px) / 3);
@@ -273,9 +275,13 @@
   .footer-container {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: flex-start;
   }
   .ftr-container {
-    display: block;
+    margin-right: auto;
   }
 }
 @media (max-width: 1157px) {
