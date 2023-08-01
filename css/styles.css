@@ -110,6 +110,7 @@ img {
   padding: 24px 24px 40px 40px;
   display: flex;
   flex-direction: column;
+  padding-top: 80px;
 }
 .menu-close-btn {
   position: absolute;
